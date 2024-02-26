@@ -49,7 +49,7 @@ let handle_click = (event) => {
 }
 document.addEventListener("click", handle_click);
 const paypal_sdk_url = "https://www.paypal.com/sdk/js";
-const client_id = "REPLACE_WITH_YOUR_CLIENT_ID";
+const client_id = "AV70EpZosHjxt4GTU3FQMgmnBXjtJ2rHr4QDmlkVxy0EgRJlrqYibC4znkxfdj65DoyqCgZpqXYyGG4J";
 const currency = "USD";
 const intent = "capture";
 
@@ -176,7 +176,7 @@ is_user_logged_in()
             document.querySelector("#card-form").querySelector("input[type='submit']").setAttribute("disabled", "");
             document.querySelector("#card-form").querySelector("input[type='submit']").value = "Loading...";
             card_fields
-              .submit(
+              .submit()
                 //Customer Data BEGIN
                 //This wasn't part of the video guide originally, but I've included it here
                 //So you can reference how you could send customer data, which may
